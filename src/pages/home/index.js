@@ -12,7 +12,7 @@ import { Controller, Scene } from 'react-scrollmagic';
 import isMobile from '../../modules/device';
 /** components */
 /** containers */
-import Hero from '../../sections/homeHero';
+import HeroMobile from '../../sections/homeHeroMobile';
 // const DragAndDrop = React.lazy(() => import( /* webpackChunkName: "drag-and-drop-section" */ './sections/dragAndDrop'));
 /** styles */
 import './home.scss';
@@ -39,7 +39,7 @@ class HomeContainer extends React.Component {
     if (isMobile) {
       return(
         <div className="home-page-container--mobile">
-          mobile
+          <HeroMobile/>
         </div>
       );
     } else {
