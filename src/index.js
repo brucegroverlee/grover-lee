@@ -1,6 +1,6 @@
 const pkg = require('../package.json');
 
-import './utilities/viewportUnits';
+// import './utilities/viewportUnits';
 import './containers/app.jsx';
 import './styles/index.scss';
 

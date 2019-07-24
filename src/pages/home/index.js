@@ -9,6 +9,7 @@ import { Controller, Scene } from 'react-scrollmagic';
 /** logics */
 /** utils */
 /** modules */
+import isMobile from '../../modules/device';
 /** components */
 /** containers */
 import Hero from '../../sections/homeHero';
@@ -34,24 +35,33 @@ class HomeContainer extends React.Component {
   }
 
   render() {
-    return(
-      <div className="home-page-container">
-        <Controller globalSceneOptions={{ triggerHook: 'onLeave' }}>
-          <Scene pin>
-            <div className="panel blue"><span>Panel</span></div>
-          </Scene>
-          <Scene pin>
-            <div className="panel turqoise"><span>Panel</span></div>
-          </Scene>
-          <Scene pin>
-            <div className="panel green"><span>Panel</span></div>
-          </Scene>
-          <Scene pin>
-            <div className="panel bordeaux"><span>Panel</span></div>
-          </Scene>
-        </Controller>
-      </div>
-    );
+
+    if (isMobile) {
+      return(
+        <div className="home-page-container--mobile">
+          mobile
+        </div>
+      );
+    } else {
+      return(
+        <div className="home-page-container">
+          <Controller globalSceneOptions={{ triggerHook: 'onLeave' }}>
+            <Scene pin>
+              <div className="panel blue"><span>Panel</span></div>
+            </Scene>
+            <Scene pin>
+              <div className="panel turqoise"><span>Panel</span></div>
+            </Scene>
+            <Scene pin>
+              <div className="panel green"><span>Panel</span></div>
+            </Scene>
+            <Scene pin>
+              <div className="panel bordeaux"><span>Panel</span></div>
+            </Scene>
+          </Controller>
+        </div>
+      );
+    }
   }
 }
 

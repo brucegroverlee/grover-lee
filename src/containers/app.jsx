@@ -49,7 +49,7 @@ const App = () => {
   return (
     <Provider store={store}>
       <BrowserRouter history={history}>
-      <Switch>
+        <Switch>
           <Route exact path="/" component={Home} />
         </Switch>
       </BrowserRouter>
