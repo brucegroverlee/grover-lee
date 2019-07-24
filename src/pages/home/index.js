@@ -2,6 +2,7 @@
 import React, { Suspense } from 'react';
 import { connect } from 'react-redux';
 import PropTypes from 'prop-types';
+import { Controller, Scene } from 'react-scrollmagic';
 /** constants */
 /** actions */
 /** apis */
@@ -10,12 +11,10 @@ import PropTypes from 'prop-types';
 /** modules */
 /** components */
 /** containers */
-import Hero from './sections/hero';
-const DragAndDrop = React.lazy(() => import( /* webpackChunkName: "drag-and-drop-section" */ './sections/dragAndDrop'));
-const Customizable = React.lazy(() => import( /* webpackChunkName: "customizable-section" */ './sections/customizable'));
-const Code = React.lazy(() => import( /* webpackChunkName: "code-section" */ './sections/code'));
-const Cta = React.lazy(() => import( /* webpackChunkName: "cta-section" */ './sections/cta'));
+import Hero from '../../sections/homeHero';
+// const DragAndDrop = React.lazy(() => import( /* webpackChunkName: "drag-and-drop-section" */ './sections/dragAndDrop'));
 /** styles */
+import './home.scss';
 /** files */
 /** strings */
 
@@ -36,14 +35,21 @@ class HomeContainer extends React.Component {
 
   render() {
     return(
-      <div className="home-container-page">
-        <Hero/>
-        <Suspense fallback={<SpinnerPage/>}>
-          <DragAndDrop/>
-          <Customizable/>
-          <Code/>
-          <Cta/>
-        </Suspense>
+      <div className="home-page-container">
+        <Controller globalSceneOptions={{ triggerHook: 'onLeave' }}>
+          <Scene pin>
+            <div className="panel blue"><span>Panel</span></div>
+          </Scene>
+          <Scene pin>
+            <div className="panel turqoise"><span>Panel</span></div>
+          </Scene>
+          <Scene pin>
+            <div className="panel green"><span>Panel</span></div>
+          </Scene>
+          <Scene pin>
+            <div className="panel bordeaux"><span>Panel</span></div>
+          </Scene>
+        </Controller>
       </div>
     );
   }
@@ -56,3 +62,12 @@ const mapStateToProps = () => ({});
 const mapDispatchToProps = () => ({});
 
 export default connect(mapStateToProps, mapDispatchToProps)(HomeContainer);
+
+/**
+ *  <Suspense fallback={<SpinnerPage/>}>
+          <DragAndDrop/>
+          <Customizable/>
+          <Code/>
+          <Cta/>
+        </Suspense>
+ */

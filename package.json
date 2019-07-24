@@ -8,8 +8,8 @@
     "dev": "./scripts/development.build.sh",
     "build-staging": "./scripts/staging.build.sh",
     "build-production": "./scripts/production.build.sh",
-    "watch": "webpack --watch --mode development --env.ENVIRONMENT=development --env.ENV_FILE_PATH=$PWD/env/development.env --env.FIREBASE_CONFIG_PATH=$PWD/env/development.firebaseConfig.json --env.PLANS_JSON_PATH=$PWD/env/development.plans.json",
-    "start": "webpack-dev-server --mode development --env.ENVIRONMENT=development --env.ENV_FILE_PATH=$PWD/env/development.env --env.FIREBASE_CONFIG_PATH=$PWD/env/development.firebaseConfig.json --env.PLANS_JSON_PATH=$PWD/env/development.plans.json",
+    "watch": "webpack --watch --mode development --env.ENVIRONMENT=development --env.ENV_FILE_PATH=$PWD/env/development.env",
+    "start": "webpack-dev-server --mode development --env.ENVIRONMENT=development --env.ENV_FILE_PATH=$PWD/env/development.env",
     "deploy-staging": "firebase deploy --only hosting:admin -P staging",
     "deploy-production": "firebase deploy --only hosting:admin -P production"
   },
@@ -45,7 +45,9 @@
     "autoprefixer": "^9.5.1",
     "babel-loader": "^8.0.6",
     "babel-plugin-transform-react-jsx-img-import": "^0.1.4",
+    "copy-webpack-plugin": "^5.0.3",
     "css-loader": "^2.1.1",
+    "dotenv-webpack": "^1.7.0",
     "enzyme": "^3.9.0",
     "enzyme-adapter-react-16": "^1.13.1",
     "file-loader": "^3.0.1",
@@ -62,8 +64,10 @@
     "prop-types": "^15.7.2",
     "react": "^16.8.6",
     "react-dom": "^16.8.6",
+    "react-gsap": "^1.2.0",
     "react-redux": "^7.0.3",
     "react-router-dom": "^5.0.0",
+    "react-scrollmagic": "^2.1.1",
     "redux": "^4.0.1",
     "redux-logger": "^3.0.6",
     "redux-thunk": "^2.3.0",
@@ -71,8 +75,7 @@
     "url-loader": "^1.1.2",
     "webpack": "^4.28.4",
     "webpack-cli": "^3.3.2",
-    "webpack-dev-server": "^3.4.1",
-    "dotenv-webpack": "^1.7.0"
+    "webpack-dev-server": "^3.4.1"
   },
   "dependencies": {}
 }
