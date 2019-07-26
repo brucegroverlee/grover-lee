@@ -1,5 +1,23 @@
 {
   "projects": {
-    "default": "sherpon-staging"
+    "default": "groverlee-staging",
+    "production": "groverlee-production",
+    "staging": "groverlee-staging"
+  },
+  "targets": {
+    "groverlee-production": {
+      "hosting": {
+        "groverlee": [
+          "groverlee-production"
+        ]
+      }
+    },
+    "groverlee-staging": {
+      "hosting": {
+        "groverlee": [
+          "groverlee-staging"
+        ]
+      }
+    }
   }
 }

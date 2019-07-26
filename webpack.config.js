@@ -72,13 +72,7 @@ module.exports = (env) => {
         filename: '[name].bundle.[hash:4].css',
         chunkFilename: '[name].bundle.[hash:4].css',
       }),
-      new Dotenv({
-        path: env.ENV_FILE_PATH, // load this now instead of the ones in '.env'
-        safe: false, // load '.env.example' to verify the '.env' variables are all set. Can also be a string to a different file.
-        systemvars: true, // load all the predefined 'process.env' variables which will trump anything local per dotenv specs.
-        silent: false, // hide any errors
-        defaults: false // load '.env.defaults' as the default values if empty.
-      }),
+      new Dotenv({}),
       new webpack.EnvironmentPlugin({}),
       new CopyPlugin([
         { from: './src/robots.txt', to: './' },
