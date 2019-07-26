@@ -14,6 +14,7 @@ import isMobile from '../../modules/device';
 /** containers */
 import HeroMobile from '../../sections/homeHeroMobile';
 import SkillMobile from '../../sections/homeSkillMobile';
+import SherponMobile from '../../sections/homeSherponMobile';
 // const DragAndDrop = React.lazy(() => import( /* webpackChunkName: "drag-and-drop-section" */ './sections/dragAndDrop'));
 /** styles */
 import './home.scss';
@@ -42,6 +43,7 @@ class HomeContainer extends React.Component {
         <div className="home-page-container--mobile">
           <HeroMobile/>
           <SkillMobile/>
+          <SherponMobile/>
         </div>
       );
     } else {
