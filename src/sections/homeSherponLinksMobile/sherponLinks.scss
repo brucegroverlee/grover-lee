@@ -30,6 +30,11 @@
     justify-content: flex-start;
     align-items: center;
     text-align: center;
+    font-size: 14px;
+
+    @media (min-width: 750px) {
+      font-size: 18px;
+    }
 
     > img {
       width: 150.6px;
