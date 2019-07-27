@@ -8,3 +8,8 @@ $colorAccentBackground: #FFE5BC;
 $colorPlaceholder: #EBEBEB;
 $colorBackground: #FAFAFA;
 $colorOverlay: rgba(71, 62, 179, 0.4);
+
+:root {
+  --color-primary: $colorPrimary;
+  --color-text: $colorText;
+}
