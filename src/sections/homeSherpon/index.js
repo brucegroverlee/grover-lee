@@ -9,36 +9,37 @@ import PropTypes from 'prop-types';
 /** utils */
 /** modules */
 /** components */
-import Hero from './hero.jsx';
+import Sherpon from './sherpon.jsx';
 /** containers */
 /** styles */
-import './hero.scss';
+import './sherpon.scss';
 /** files */
 /** strings */
-import strings from './hero.strings.json';
+import strings from './sherpon.strings.json';
 
 /**
- * Hero container
+ * Sherpon container
  */
 
-class HeroContainer extends React.Component {
+class SherponContainer extends React.Component {
   constructor(props) {
     super(props);
   }
 
   render() {
-    const {language} = this.props;
+    const {progress, language} = this.props;
     return(
-      <div className="hero-section-container">
-        <Hero
+      <div className="sherpon-section-container--mobile">
+        <Sherpon
           strings={strings[language]}
+          progress={progress}
         />
       </div>
     );
   }
 }
 
-HeroContainer.propTypes = {
+SherponContainer.propTypes = {
   language: PropTypes.string.isRequired,
 };
 
@@ -48,4 +49,4 @@ const mapStateToProps = (state) => ({
 
 const mapDispatchToProps = (dispatch) => ({});
 
-export default connect(mapStateToProps, mapDispatchToProps)(HeroContainer);
+export default connect(mapStateToProps, mapDispatchToProps)(SherponContainer);

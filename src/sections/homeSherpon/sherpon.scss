@@ -1,0 +1,132 @@
+// .sherpon-section-container {}
+
+.sherpon-section {
+  width: 100%;
+  min-height: 100vh;
+  // min-height: calc(var(--vh, 1vh) * 100);
+  background: linear-gradient(247.1deg, #766AFA 0%, #5851EA 74.71%);
+  color: #ffffff;
+  display: flex;
+
+  &__left {
+    width: 50%;
+
+    > img {
+      width: 100%;
+      margin-top: 86px;
+      margin-left: -20%;
+    }
+  }
+
+  &__right {
+    width: 100%;
+    padding: 36px 34px 34px 34px;
+    box-sizing: border-box;
+
+    @media (min-width: 750px) {
+      padding: 56px 34px 34px 34px;
+      width: 50%;
+    }
+
+    &__header {
+      &__title {
+        font-size: 18px;
+        font-weight: 700;
+      }
+      &__text {
+
+        @media (min-width: 750px) {
+          font-size: 18px;
+        }
+      }
+    }
+
+    &__description {
+      margin-top: 26px;
+
+      &__title {
+        > img.mobile {
+          display: block;
+
+          @media (min-width: 750px) {
+            display: none;
+          }
+        }
+        > img:not(mobile) {
+          display: none;
+
+          @media (min-width: 750px) {
+            display: block;
+          }
+        }
+      }
+      &__text {
+
+        @media (min-width: 750px) {
+          font-size: 18px;
+        }
+      }
+    }
+
+    &__animation {
+      position: relative;
+    }
+
+    &__role {
+      position: absolute;
+      opacity: 0;
+      top: 600px;
+
+      &__title {
+        font-size: 18px;
+        font-weight: 700;
+      }
+      &__text {
+
+        @media (min-width: 750px) {
+          font-size: 18px;
+        }
+      }
+    }
+
+    &__technologies {
+      position: absolute;
+      opacity: 0;
+      margin-top: 26px;
+
+      &__title {
+        font-size: 18px;
+        font-weight: 700;
+      }
+      &__text {
+
+        @media (min-width: 750px) {
+          font-size: 18px;
+        }
+      }
+    }
+
+    &__architecture {
+      position: absolute;
+      opacity: 0;
+      margin-top: 26px;
+
+      &__title {
+        font-size: 18px;
+        font-weight: 700;
+      }
+      &__text {
+        font-size: 18px;
+
+        > img {
+          margin-top: 21px;
+          width: 60%;
+        }
+      }
+    }
+  }
+
+  ul {
+    list-style: none;
+  }
+}

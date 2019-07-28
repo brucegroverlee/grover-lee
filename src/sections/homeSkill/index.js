@@ -9,19 +9,19 @@ import PropTypes from 'prop-types';
 /** utils */
 /** modules */
 /** components */
-import Hero from './hero.jsx';
+import Skill from './skill.jsx';
 /** containers */
 /** styles */
-import './hero.scss';
+import './skill.scss';
 /** files */
 /** strings */
-import strings from './hero.strings.json';
+import strings from './skill.strings.json';
 
 /**
- * Hero container
+ * Skill container
  */
 
-class HeroContainer extends React.Component {
+class SkillContainer extends React.Component {
   constructor(props) {
     super(props);
   }
@@ -29,8 +29,8 @@ class HeroContainer extends React.Component {
   render() {
     const {language} = this.props;
     return(
-      <div className="hero-section-container">
-        <Hero
+      <div className="skill-section-container--mobile">
+        <Skill
           strings={strings[language]}
         />
       </div>
@@ -38,7 +38,7 @@ class HeroContainer extends React.Component {
   }
 }
 
-HeroContainer.propTypes = {
+SkillContainer.propTypes = {
   language: PropTypes.string.isRequired,
 };
 
@@ -48,4 +48,4 @@ const mapStateToProps = (state) => ({
 
 const mapDispatchToProps = (dispatch) => ({});
 
-export default connect(mapStateToProps, mapDispatchToProps)(HeroContainer);
+export default connect(mapStateToProps, mapDispatchToProps)(SkillContainer);

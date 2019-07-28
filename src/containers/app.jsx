@@ -18,7 +18,7 @@ import reducer from '../reducers'
 /** components */
 import Language from '../components/language';
 /** containers */
-import Home from '../pages/home';
+import Home from '../pages/homeMobile';
 /** styles */
 /** files */
 /** strings */

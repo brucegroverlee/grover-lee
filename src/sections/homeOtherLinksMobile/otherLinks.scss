@@ -1,9 +1,22 @@
-// .other-links-section-container--mobile {}
+.other-links-section-container--mobile {
+  @media (min-width: 900px) {
+    height: 100%;
+  }
+}
 
 .other-links-section--mobile {
   background-color: #34363a;
   color: #ffffff;
   padding: 66px 0px 74px 49px;
+
+  @media (min-width: 900px) {
+    padding: 0px 0px 0px 49px;
+    height: 50vh;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: flex-start;
+  }
 
   a {
     color: #ffffff;
