@@ -19,7 +19,7 @@ import sherponArchitecturePicture from './images/architecture.webp';
 
 const Sherpon = ({strings}) => {
   return(
-    <div className="sherpon-section--mobile">
+    <div id="project-sherpon" className="sherpon-section--mobile">
       <div className="sherpon-section--mobile__left">
         <img src={sherponIsotypePicture} alt="Grover Lee Project Sherpon"/>
       </div>

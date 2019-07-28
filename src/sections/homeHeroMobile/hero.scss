@@ -6,6 +6,10 @@
   height: 100vh;
   // height: calc(var(--vh, 1vh) * 100);
 
+  a {
+    color: #ffffff;
+  }
+
   &__bg-image {
     background-image: url('./images/background.webp');
     background-repeat: no-repeat;
