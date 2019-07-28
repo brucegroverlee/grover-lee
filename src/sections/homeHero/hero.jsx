@@ -11,35 +11,32 @@ import PropTypes from 'prop-types';
 /** containers */
 /** styles */
 /** files */
-import isotype from './images/isotype-outwhite.svg';
+import groverLeePicture from './images/grover-lee.svg';
 /** strings */
 
 const Hero = ({children, strings}) => {
   return(
-    <div id="hero-section" className="hero-section">
-      <div className="hero-section__hero">
-        <div className="hero-section__hero__logo">
-          <img src={isotype} alt='Sherpon logo'/>
-          <div>Sherpon</div>
-        </div>
-        <div className="hero-section__hero__title">
-          {strings.titleLabel}
-        </div>
-        <div className="hero-section__hero__description">
-          {strings.descriptionLabel}
-        </div>
-        <div className="hero-section__hero__action">
-          <div className="hero-button-container">
-            <a href={process.env.ADMIN_URL_ENDPOINT}>
-            <div className="hero-button">
-              {strings.signupButton}
+    <div className="hero-section">
+      <div className="hero-section__bg-image">
+        <div className="hero-section__bg-color">
+          <div className="hero-section__container">
+            <div className="hero-section__header">
+              <div className="hero-text-secundary">
+                <a href="https://github.com/brucegroverlee" target="__blank">GITHUB</a>
+              </div>
             </div>
-            </a>
+
+            <div className="hero-section__title">
+              <img src={groverLeePicture} alt="Grover Lee"/>
+            </div>
+
+            <div className="hero-section__sub-title">
+              <div className="hero-text-secundary">
+                Full Stack Developer
+              </div>
+            </div>
           </div>
         </div>
-      </div>
-      <div className="hero-section__animation">
-        {children}
       </div>
     </div>
   );

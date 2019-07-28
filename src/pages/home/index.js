@@ -11,7 +11,7 @@ import { Controller, Scene } from 'react-scrollmagic';
 /** modules */
 /** components */
 /** containers */
-// import HeroMobile from '../../sections/homeHeroMobile';
+import Hero from '../../sections/homeHero';
 import Skill from '../../sections/homeSkill';
 import Sherpon from '../../sections/homeSherpon';
 import SherponLinksMobile from '../../sections/homeSherponLinksMobile';
@@ -43,7 +43,9 @@ class HomeContainer extends React.Component {
       <div className="home-page-container">
         <Controller globalSceneOptions={{ triggerHook: 'onLeave' }}>
           <Scene pin>
-            <div className="panel blue"><span>Panel</span></div>
+            <div className="panel">
+              <Hero/>
+            </div>
           </Scene>
           <Scene pin>
             <div className="panel white">
