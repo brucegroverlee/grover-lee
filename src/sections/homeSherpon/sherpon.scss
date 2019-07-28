@@ -75,7 +75,12 @@
       }
     }
 
+    &__animation {
+      position: relative;
+    }
+
     &__role {
+      position: absolute;
       margin-top: 26px;
 
       &__title {
@@ -91,6 +96,7 @@
     }
 
     &__technologies {
+      position: absolute;
       margin-top: 26px;
 
       &__title {
@@ -106,6 +112,7 @@
     }
 
     &__architecture {
+      position: absolute;
       margin-top: 26px;
 
       &__title {
@@ -122,8 +129,7 @@
 
         > img {
           margin-top: 21px;
-          width: 253px;
-          height: 204px;
+          width: 350px;
         }
       }
     }
