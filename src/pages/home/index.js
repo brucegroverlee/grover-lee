@@ -12,7 +12,7 @@ import { Controller, Scene } from 'react-scrollmagic';
 /** components */
 /** containers */
 // import HeroMobile from '../../sections/homeHeroMobile';
-// import SkillMobile from '../../sections/homeSkillMobile';
+import Skill from '../../sections/homeSkill';
 // import SherponMobile from '../../sections/homeSherponMobile';
 import SherponLinksMobile from '../../sections/homeSherponLinksMobile';
 import OtherSkillsMobile from '../../sections/homeOtherSkillsMobile';
@@ -46,7 +46,9 @@ class HomeContainer extends React.Component {
             <div className="panel blue"><span>Panel</span></div>
           </Scene>
           <Scene pin>
-            <div className="panel turqoise"><span>Panel</span></div>
+            <div className="panel white">
+              <Skill/>
+            </div>
           </Scene>
           <Scene pin>
             <div className="panel white">
