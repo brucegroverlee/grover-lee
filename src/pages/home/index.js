@@ -5,11 +5,11 @@ import PropTypes from 'prop-types';
 import { Controller, Scene } from 'react-scrollmagic';
 /** constants */
 /** actions */
+import onResize from '../../actions/onResize'
 /** apis */
 /** logics */
 /** utils */
 /** modules */
-import isMobile from '../../modules/device';
 /** components */
 /** containers */
 import HeroMobile from '../../sections/homeHeroMobile';
@@ -37,11 +37,12 @@ const SpinnerPage = () => {
 class HomeContainer extends React.Component {
   constructor(props) {
     super(props);
+    this.props.onResize();
   }
 
   render() {
 
-    if (isMobile) {
+    if (this.props.isMobile) {
       return(
         <div className="home-page-container--mobile">
           <HeroMobile/>
@@ -77,9 +78,13 @@ class HomeContainer extends React.Component {
 
 HomeContainer.propTypes = {};
 
-const mapStateToProps = () => ({});
+const mapStateToProps = (state) => ({
+  isMobile: state.isMobile,
+});
 
-const mapDispatchToProps = () => ({});
+const mapDispatchToProps = (dispatch) => ({
+  onResize: () => dispatch(onResize()),
+});
 
 export default connect(mapStateToProps, mapDispatchToProps)(HomeContainer);
 

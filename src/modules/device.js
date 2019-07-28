@@ -10,4 +10,4 @@ const isMobile = () => {
   return isMobile;
 };
 
-export default isMobile();
+export default isMobile;
