@@ -10,8 +10,8 @@
     "build-production": "./scripts/production.build.sh",
     "watch": "webpack --watch --mode development --env.ENVIRONMENT=development",
     "start": "webpack-dev-server --mode development --env.ENVIRONMENT=development",
-    "deploy-staging": "firebase deploy --only hosting:admin -P staging",
-    "deploy-production": "firebase deploy --only hosting:admin -P production"
+    "deploy-staging": "firebase deploy --only hosting:groverlee -P staging",
+    "deploy-production": "firebase deploy --only hosting:groverlee -P production"
   },
   "browserslist": [
     "last 2 versions"
