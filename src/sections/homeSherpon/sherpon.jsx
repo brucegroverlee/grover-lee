@@ -56,85 +56,77 @@ const Sherpon = ({strings, progress}) => {
               from={{ opacity: 0 }}
               to={{ opacity: 1 }}
             />
-            <Timeline 
-              target={
-                <div className="sherpon-section__right__role">
-                  <div className="sherpon-section__right__role__title">
-                    Role
-                  </div>
-                  <div className="sherpon-section__right__role__text">
-                    Creator and Full Stack Developer
-                  </div>
+          </Timeline>
+          <Timeline 
+            target={
+              <div className="sherpon-section__right__role">
+                <div className="sherpon-section__right__role__title">
+                  Role
                 </div>
-              }
-            >
-              <Tween
-                from={{ opacity: 0 }}
-                to={{ opacity: 1 }}
-              />
-              <Tween
-                from={{ opacity: 1 }}
-                to={{ opacity: 1 }}
-              />
-              <Tween
-                from={{ opacity: 1 }}
-                to={{ opacity: 0 }}
-              />
-            </Timeline>
-            <Timeline 
-              target={
-                <div className="sherpon-section__right__technologies">
-                  <div className="sherpon-section__right__technologies__title">
-                    Technologies
-                  </div>
-                  <div className="sherpon-section__right__technologies__text">
-                    <ul>
-                      <li>Node.js</li>
-                      <li>Express</li>
-                      <li>React.js</li>
-                      <li>Webpack</li>
-                      <li>Jenkins (CI/CD)</li>
-                      <li>GCP (VM Instances, Functions, Storage, NoSQL)</li>
-                      <li>Firebase (Authentication)</li>
-                    </ul>
-                  </div>
+                <div className="sherpon-section__right__role__text">
+                  Creator and Full Stack Developer
                 </div>
-              }
-            >
-              <Tween
-                from={{ opacity: 0 }}
-                to={{ opacity: 1 }}
-              />
-              <Tween
-                from={{ opacity: 1 }}
-                to={{ opacity: 1 }}
-              />
-              <Tween
-                from={{ opacity: 1 }}
-                to={{ opacity: 0 }}
-              />
-            </Timeline>
-            <Timeline 
-              target={
-                <div className="sherpon-section__right__architecture">
-                  <div className="sherpon-section__right__architecture__title">
-                    Architecture
-                  </div>
-                  <div className="sherpon-section__right__architecture__text">
-                    <img src={sherponArchitecturePicture} alt="Grover Lee architecture"/>
-                  </div>
+              </div>
+            }
+          >
+            <Tween
+              from={{ opacity: 0, top: '600px' }}
+              to={{ opacity: 1, top: '250px' }}
+            />
+            <Tween
+              to={{ opacity: 1 }}
+            />
+            <Tween
+              to={{ opacity: 0, top: '600px' }}
+            />
+          </Timeline>
+          <Timeline 
+            target={
+              <div className="sherpon-section__right__technologies">
+                <div className="sherpon-section__right__technologies__title">
+                  Technologies
                 </div>
-              }
-            >
-              <Tween
-                from={{ opacity: 0 }}
-                to={{ opacity: 1 }}
-              />
-              <Tween
-                from={{ opacity: 1 }}
-                to={{ opacity: 1 }}
-              />
-            </Timeline>
+                <div className="sherpon-section__right__technologies__text">
+                  <ul>
+                    <li>Node.js</li>
+                    <li>Express</li>
+                    <li>React.js</li>
+                    <li>Webpack</li>
+                    <li>Jenkins (CI/CD)</li>
+                    <li>GCP (VM Instances, Functions, Storage, NoSQL)</li>
+                    <li>Firebase (Authentication)</li>
+                  </ul>
+                </div>
+              </div>
+            }
+          >
+            <Tween
+              from={{ opacity: 0, top: '600px' }}
+              to={{ opacity: 1, top: '250px' }}
+            />
+            <Tween
+              to={{ opacity: 1 }}
+            />
+            <Tween
+              to={{ opacity: 0, top: '600px' }}
+            />
+          </Timeline>
+          <Timeline 
+            target={
+              <div className="sherpon-section__right__architecture">
+                <div className="sherpon-section__right__architecture__title">
+                  Architecture
+                </div>
+                <div className="sherpon-section__right__architecture__text">
+                  <img src={sherponArchitecturePicture} alt="Grover Lee architecture"/>
+                </div>
+              </div>
+            }
+          >
+            <Tween
+              from={{ opacity: 0, top: '600px' }}
+              to={{ opacity: 1, top: '250px' }}
+            />
           </Timeline>
         </Timeline>
       </div>
