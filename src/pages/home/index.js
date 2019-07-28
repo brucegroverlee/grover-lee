@@ -15,8 +15,8 @@ import { Controller, Scene } from 'react-scrollmagic';
 // import SkillMobile from '../../sections/homeSkillMobile';
 // import SherponMobile from '../../sections/homeSherponMobile';
 // import SherponLinksMobile from '../../sections/homeSherponLinksMobile';
-// import OtherSkillsMobile from '../../sections/homeOtherSkillsMobile';
-// import OtherLinksMobile from '../../sections/homeOtherLinksMobile';
+import OtherSkillsMobile from '../../sections/homeOtherSkillsMobile';
+import OtherLinksMobile from '../../sections/homeOtherLinksMobile';
 // const DragAndDrop = React.lazy(() => import( /* webpackChunkName: "drag-and-drop-section" */ './sections/dragAndDrop'));
 /** styles */
 import './home.scss';
@@ -52,7 +52,10 @@ class HomeContainer extends React.Component {
             <div className="panel green"><span>Panel</span></div>
           </Scene>
           <Scene pin>
-            <div className="panel bordeaux"><span>Panel</span></div>
+            <div className="panel bordeaux">
+              <OtherSkillsMobile/>
+              <OtherLinksMobile/>
+            </div>
           </Scene>
         </Controller>
       </div>
