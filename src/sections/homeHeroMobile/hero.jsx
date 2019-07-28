@@ -22,10 +22,11 @@ const Hero = ({children, strings}) => {
           <div className="hero-section--mobile__container">
             <div className="hero-section--mobile__header">
               <div className="hero-text-secundary--mobile">
-                PROJECT
+                <a href="#project-sherpon">PROJECT</a>
+                
               </div>
               <div className="hero-text-secundary--mobile">
-                GITHUB
+                <a href="https://github.com/brucegroverlee" target="__blank">GITHUB</a>
               </div>
             </div>
 

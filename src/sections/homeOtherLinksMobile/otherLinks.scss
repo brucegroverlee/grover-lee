@@ -1,0 +1,16 @@
+// .other-links-section-container--mobile {}
+
+.other-links-section--mobile {
+  background-color: #34363a;
+  color: #ffffff;
+  padding: 66px 0px 74px 49px;
+
+  a {
+    color: #ffffff;
+  }
+
+  &__title {
+    font-size: 18px;
+    font-weight: 700;
+  }
+}
