@@ -118,7 +118,7 @@ const Sherpon = ({strings, progress}) => {
                   Architecture
                 </div>
                 <div className="sherpon-section__right__architecture__text">
-                  Microservice Architecture Pattern
+                  <div>Microservice Architecture Pattern</div>
                   <img src={sherponArchitecturePicture} alt="Grover Lee architecture"/>
                 </div>
               </div>
