@@ -22,7 +22,7 @@ const OtherLinks = ({strings}) => {
       </div>
       <div className="other-links-section--mobile__links">
         <div className="other-links-section--mobile__link">
-          <a href="https://drive.google.com/open?id=1XK04BR9euThdAJYfBpZWGmvRnoy9X1jP" target="__blank">Resume</a>
+          <a href="https://drive.google.com/file/d/1Lrs76_9OnvsdWwzWTg-u6U-h_tVlC6o2/view?usp=sharing" target="__blank">Resume</a>
         </div>
         <div className="other-links-section--mobile__link">
           <a href="https://github.com/brucegroverlee" target="__blank">Github</a>
